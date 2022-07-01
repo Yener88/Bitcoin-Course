@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitcoin</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="font.css">
+    <link rel="icon" type="image/x-icon" href="img/icon.png">
+    <!-- Bootstrap files -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <!-- chart js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.0/dist/chart.min.js"></script>
+    <script src="main.js"></script>
+</head>
+
+<body onload="init()">
+    <div class="container">
+        <h1 class="title ta-c mb-5">Bitcoin-Course</h1>
+        <form id="newDate" class="mb-3 formBox">
+            <div class="form-floating me-2">
+                <input type="date" class="form-control" id="startInp" placeholder="Start Datum">
+                <label for="floatingInput">start date</label>
+            </div>
+            <div class="form-floating me-2">
+                <input type="date" class="form-control" id="endInp" placeholder="End Datum">
+                <label for="floatingPassword">end date</label>
+            </div>
+            <button onclick="fetchBitcoinCourse()" id="getDateButton" type="button" class="btn btn-primary">Confirm</button>
+        </form>
+        <div class="ta-c"><u>CURRENT BITCOIN RATE:&nbsp;&nbsp; <b id="placeholder">...</b> &nbsp;&nbsp;US-DOLLAR</u></div>
+        <div id="showSection" class="showSection">
+            <div class="divTable">
+                <table id="newPlaceholder" class="table table-light table-hover c-d"></table>
+            </div>
+            <div id="canvasBox" class="canvasBox">
+                <canvas id="myChart"></canvas>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

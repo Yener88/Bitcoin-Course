@@ -1,0 +1,163 @@
+body {
+    margin: 0;
+    background-image: url('img/bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: rgb(31, 31, 31);
+    font-family: 'Alumni Sans' !important;
+    font-size: 1.3em !important;
+    font-weight: bold !important;
+}
+
+.dnone {
+    display: none !important;
+}
+
+.btn {
+    background-color: #363636 !important;
+    border: none !important;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.ta-c {
+    text-align: center;
+    cursor: default;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #dbdbdb;
+    border-radius: 20px;
+    cursor: default;
+}
+
+.titlelogo {
+    width: 4%;
+}
+
+.container {
+    padding-top: 50px;
+    background-color: whitesmoke;
+    min-height: 100vh;
+    padding-bottom: 35px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    background: #dbdbdb;
+    border-radius: 20px;
+}
+
+.canvasBox {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 30px;
+    background: #dbdbdb;
+    border-radius: 20px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+td {
+    text-align: center;
+    border-left: 1px solid black !important;
+    border-right: 1px solid black !important;
+}
+
+th {
+    text-align: center !important;
+}
+
+.divTable {
+    width: 100%;
+    text-align: -webkit-center;
+    margin-top: 30px;
+    background: #dbdbdb;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 10px;
+}
+
+.table {
+    max-width: 500px !important;
+    margin-top: 1rem;
+}
+
+.c-d {
+    cursor: default;
+}
+
+.showSection {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+.newresearch {
+    text-decoration: none;
+    background-color: #363636;
+    color: white;
+    border-radius: 15px;
+    height: 55px;
+    width: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.newresearch:hover {
+    opacity: 0.9;
+    color: white;
+}
+
+#myChart {
+    width: fit-content !important;
+    max-width: 800px;
+}
+
+::-webkit-scrollbar {
+    height: 5px;
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background: white;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: rgb(204, 204, 204);
+}
+
+::-webkit-scrollbar-thumb:active {
+    background: rgb(173, 173, 173);
+}
+
+@media(max-width: 500px) {
+    .canvasBox {
+        background: none !important;
+    }
+    .divTable {
+        background: none !important;
+    }
+
+    .form-floating {
+        width: 100%;
+    }
+
+    .formBox {
+        display: flex;
+        flex-direction: column;
+    }
+    .newresearch2 {
+        align-items: center !important;
+    }
+}
